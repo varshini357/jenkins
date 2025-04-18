@@ -1,5 +1,6 @@
 pipeline {
   agent {
+    timeout(time: 05, unit: 'MINUTES') 
     docker {
       image 'maven:3.8.5-openjdk-17'
     }
